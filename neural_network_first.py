@@ -22,14 +22,6 @@ class Neuron:
 
 ############################
 
-#use two weights
-
-#weights = np.array( [ 0, 1 ] )    #create an one-dimentional array of weights w1 = 0, w2 = 1
-#bias = 0                          #any number
-#n = Neuron( weights, bias )       # create a AN with two weights w1=0, w2=1 and bias=4
-#x = np.array( [ 2, 3 ] )          #create an one-dimentional array of inputs x1 = 2, x2 = 3
-#print( n.feedforward( x ))
-
 class OurNeuralNetwork:
     def __init__( self ):
         weights = np.array( [ 0, 1 ] )
