@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import numpy as np
-
+from mean_squared_error import *
 
 # activation function
 
@@ -44,5 +44,6 @@ class OurNeuralNetwork:
 network = OurNeuralNetwork()
 x = np.array( [ 2, 3 ] )          #create an one-dimentional array of inputs x1 = 2, x2 = 3
 
-print( network.feed_Forward( x ))
 
+print( network.feed_Forward( x ))
+print( mse_loss(y_true, y_pred) )
