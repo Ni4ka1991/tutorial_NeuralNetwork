@@ -20,7 +20,7 @@ class Neuron:
 class OurNeuralNetwork:
     def __init__(self):
     # Weights
-    self.w1 = np.random.normal()
+    self.w1 = np.random.normal() #create a array that contains normally distributed (Gaussian) data
     self.w2 = np.random.normal()
     self.w3 = np.random.normal()
     self.w4 = np.random.normal()
