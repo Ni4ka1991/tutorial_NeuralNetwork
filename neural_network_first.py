@@ -19,30 +19,25 @@ class Neuron:
 
 class OurNeuralNetwork:
     def __init__(self):
-    # Weights
-    self.w1 = np.random.normal() #create a array that contains normally distributed (Gaussian) data
-    self.w2 = np.random.normal()
-    self.w3 = np.random.normal()
-    self.w4 = np.random.normal()
-    self.w5 = np.random.normal()
-    self.w6 = np.random.normal()
+        ### Weights
+        self.w1 = np.random.normal() #create an array that contains normally distributed ( Gaussian ) data ( in this case contains one element )
+        self.w2 = np.random.normal()
+        self.w3 = np.random.normal()
+        self.w4 = np.random.normal()
+        self.w5 = np.random.normal()
+        self.w6 = np.random.normal()
 
-    # Biases
-    self.b1 = np.random.normal()
-    self.b2 = np.random.normal()
-    self.b3 = np.random.normal()
+        ### Biases
+        self.b1 = np.random.normal()
+        self.b2 = np.random.normal()
+        self.b3 = np.random.normal()
         
-        ### create a three AN with weights: 1 and 2 and bias=0
-        self.h1 = Neuron( weights, bias )  # create a AN h1 with two weights w1=0, w2=1 and bias=0
-        self.h2 = Neuron( weights, bias )
-        self.o1 = Neuron( weights, bias )
-        ########i
 
     def feed_Forward( self, x ):
-        out_h1 = self.h1.feedforward( x )
-        out_h2 = self.h2.feedforward( x )
-        out_o1 = self.o1.feedforward( np.array( [ out_h1, out_h2 ] ))
-        return out_o1
+        h1 = sigmoid( self.w1 * x[0] + self.w2 * x[1] + self.b1 )  #first neuron 
+        h2 = sigmoid( self.w3 * x[0] + self.w4 * x[1] + self.b2 )  #second neuron 
+        o1 = sigmoid( self.w5 * h1 + self.w6 * h2 + self.b3 )      #output neuron 
+        return o1
 
 
 

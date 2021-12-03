@@ -12,5 +12,8 @@ print(f"size = (2, 4): {a}")
 a = np.random.normal()
 print(f"size = empty: {a}")
 
+a = np.random.normal( loc = 13, size = ( 2, 5 ))
+print(f"size = ( 2, 5 ), loc = 13 : {a}")
+
 
 
