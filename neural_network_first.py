@@ -18,9 +18,19 @@ class Neuron:
 ############################
 
 class OurNeuralNetwork:
-    def __init__( self ):
-        weights = np.array( [ 0, 1 ] )
-        bias = 0
+    def __init__(self):
+    # Weights
+    self.w1 = np.random.normal()
+    self.w2 = np.random.normal()
+    self.w3 = np.random.normal()
+    self.w4 = np.random.normal()
+    self.w5 = np.random.normal()
+    self.w6 = np.random.normal()
+
+    # Biases
+    self.b1 = np.random.normal()
+    self.b2 = np.random.normal()
+    self.b3 = np.random.normal()
         
         ### create a three AN with weights: 1 and 2 and bias=0
         self.h1 = Neuron( weights, bias )  # create a AN h1 with two weights w1=0, w2=1 and bias=0
