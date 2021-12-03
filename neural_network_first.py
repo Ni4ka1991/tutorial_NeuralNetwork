@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 
 import numpy as np
-from mean_squared_error import *
-
-# activation function
-
-def sigmoid( var ):
-    return (1 / (1 + np.exp( -var )))
-#
+from services.mean_squared_error import *
+from services.formulas import *
 
 
 # one artificial neuron properties
